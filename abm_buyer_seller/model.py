@@ -83,6 +83,7 @@ class WasteModel(Model):
         self.total_profit_without_trading_buyer = self.schedule.total_profit_without_trading_buyer
         self.total_profit_with_trading_buyer = self.schedule.total_profit_with_trading_buyer
         if self.steps == 300:
+            print()
             print(compute_recycling_rate(self))
             print(compute_seller_savings(self))
             print(compute_buyer_savings(self))
