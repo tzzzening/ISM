@@ -88,7 +88,6 @@ class WasteModel(Model):
             print(compute_seller_savings(self))
             print(compute_buyer_savings(self))
             print(compute_overall_savings(self))
-            print()
         self.data_collector.collect(self)
 
     def __str__(self) -> str:
