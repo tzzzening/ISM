@@ -1,7 +1,7 @@
 from mesa.time import SimultaneousActivation
-from abm_buyer_seller.agents import WasteAgent
-from abm_buyer_seller.agents import Buyer, Seller
-from abm_buyer_seller.enums import CapacityPlanningStrategies
+from abm.agents import WasteAgent
+from abm.agents import Buyer, Seller
+from abm.enums import CapacityPlanningStrategies
 import bisect
 import random
 from statistics import mean

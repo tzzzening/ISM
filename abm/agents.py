@@ -3,7 +3,7 @@ The classes for sellers and buyers, the 2 agents in the waste model.
 """
 
 from mesa import Agent
-from abm_buyer_seller.enums import CapacityPlanningStrategies
+from abm.enums import CapacityPlanningStrategies
 
 
 class WasteAgent(Agent):

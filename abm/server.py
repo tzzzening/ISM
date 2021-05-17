@@ -1,7 +1,7 @@
 from mesa.visualization.ModularVisualization import ModularServer
 from mesa.visualization.modules import ChartModule
 from mesa.visualization.UserParam import UserSettableParameter
-from abm_buyer_seller.model import WasteModel
+from abm.model import WasteModel
 
 
 chart = ChartModule([{'Label': 'Recycling_Rate', 'Color': 'Black'},

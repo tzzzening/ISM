@@ -1,6 +1,6 @@
 from mesa import Model
-from abm_buyer_seller.time import SimultaneousActivationMoneyModel
-from abm_buyer_seller.agents import Seller, Buyer
+from abm.time import SimultaneousActivationMoneyModel
+from abm.agents import Seller, Buyer
 from mesa.datacollection import DataCollector
 import random
 
