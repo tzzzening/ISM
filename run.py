@@ -46,3 +46,5 @@ run_data.to_excel(r'C:\Users\09nhn\OneDrive\Documents\Uni\ISM\Python\15.00.f.xls
 # seller_capacity_planning: 0 Lead, 1 Lag, 3 Match
 # buyer_capacity_planning: 0 Lead, 1 Lag, 3 Match
 # co_investing: True, False
+
+# test
