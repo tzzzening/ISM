@@ -1,4 +1,4 @@
-from abm_buyer_seller.model import WasteModel
+from abm.model import WasteModel
 from mesa.batchrunner import BatchRunner
 
 # TO RUN WEB SERVER, UNCOMMENT THESE 2 LINES AND COMMENT OUT LINE 8 ONWARDS
@@ -31,7 +31,7 @@ def compute_overall_savings(model) -> float:
 
 variable_params = {'seller_num': range(30, 31), 'buyer_num': range(30, 31)}
 batch_run = BatchRunner(WasteModel, variable_params,
-                        iterations=15, max_steps=301,
+                        iterations=1, max_steps=301,
                         model_reporters={'Recycling_Rate': compute_recycling_rate,
                                          'Seller_Savings': compute_seller_savings,
                                          'Buyer_Savings': compute_buyer_savings,
@@ -40,7 +40,7 @@ batch_run = BatchRunner(WasteModel, variable_params,
 
 batch_run.run_all()
 run_data = batch_run.get_model_vars_dataframe()
-run_data.to_excel(r'C:\Users\09nhn\OneDrive\Documents\Uni\ISM\Python\15.00.f.xlsx', index=False)
+run_data.to_excel(r'C:\Users\09nhn\OneDrive\Documents\Uni\ISM\Python\1.00.f.xlsx', index=False)
 # sheet name legend
 # number_of_runs,
 # seller_capacity_planning: 0 Lead, 1 Lag, 3 Match
